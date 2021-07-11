@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.RegisterFragment"
+    android:animateLayoutChanges="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombres"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/NombresEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellidos"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/ApellidosEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número De Cuenta"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/CuentaEdt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textColor="#fff"
+                android:editable="false"/>
+
+            <Button
+                android:id="@+id/CrearNumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2973a1"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="25dp"
+                android:text="Crear Número"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad De Dinero Inicial"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/DineroEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:inputType="number"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cedula"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/CedulaEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:inputType="number"
+            android:textColor="#fff"/>
+
+
+
+        <Button
+            android:id="@+id/RegistrarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2973a1"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="Registrar"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

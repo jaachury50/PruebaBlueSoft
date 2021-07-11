@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.ConsignacionFragment">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayoutbackground"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="left"
+            android:text="Número De Cuenta"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/CuentaConsignarEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"
+            android:backgroundTint="#fff"
+            android:textColorHint="#CBFFFFFF"
+            android:inputType="number"
+            android:hint="Número de Cuenta"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="left"
+            android:text="Cantidad A Consignar"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/CantidadConsignarEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"
+            android:backgroundTint="#fff"
+            android:textColorHint="#CBFFFFFF"
+            android:inputType="number"
+            android:hint="Valor"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/ConsignarDineroBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2973a1"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="Consignar"/>
+
+    </LinearLayout>
+
+</FrameLayout>

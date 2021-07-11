@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_fragments"
+    app:startDestination="@id/menuPrincipalFragment">
+
+    <fragment
+        android:id="@+id/menuPrincipalFragment"
+        android:name="com.desing.bluebank.fragments.MenuPrincipalFragment"
+        android:label="fragment_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_consignacionFragment"
+            app:destination="@id/consignacionFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_retirarFragment"
+            app:destination="@id/retirarFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_consultarFragment"
+            app:destination="@id/consultarFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/consignacionFragment"
+        android:name="com.desing.bluebank.fragments.ConsignacionFragment"
+        android:label="fragment_consignacion"
+        tools:layout="@layout/fragment_consignacion" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.desing.bluebank.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/retirarFragment"
+        android:name="com.desing.bluebank.fragments.RetirarFragment"
+        android:label="fragment_retirar"
+        tools:layout="@layout/fragment_retirar" />
+    <fragment
+        android:id="@+id/consultarFragment"
+        android:name="com.desing.bluebank.fragments.ConsultarFragment"
+        android:label="fragment_consultar"
+        tools:layout="@layout/fragment_consultar" />
+</navigation>
